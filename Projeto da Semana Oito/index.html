@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/books.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Projeto da Semana Oito - Pesquisa de Livros</title>
+</head>
+<body>
+    <section>
+     <header>
+            <div >
+                <form action="#">
+                    <div>
+                        <select id="selec">
+                            <option value="search" selected>Busca Geral</option>
+                            <option value="intitle">Busca Por Nome</option>
+                            <option value="inauthor">Busca por Autor</option>
+                            <option value="Titulo">Busca Por Título</option>
+                            <option value="inpublisher">Busca por Publicadora</option>
+                        </select>
+                        <input type="text" id="Input" placeholder="Faça sua busca...">
+                        <span class="material-icons"  onclick="livros()" id="btn"> search</span>
+                    </div>
+                </form>
+            </div>
+    </header>
+
+
+<div class="conteudoLi">
+    <div id="conteudo"></div>    
+</div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
